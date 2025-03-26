@@ -12,4 +12,10 @@ public class Hook extends LakeObject
     //return strength;
   }
 
+  @Override
+  public String say()
+  {
+    return "You now have a hook!";
+  }
+
 }

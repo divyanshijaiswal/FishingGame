@@ -1,11 +1,11 @@
 /*
- * Activity 4.9.3
+ * Activity 4.9.4
  */
 public class Fish extends LakeObject
 {
-  @Override
-  public String say()
-  {
-    return "You caught a fish!";
-  }
+    @Override
+    public double getCost()
+    {
+        return getWeight() * super.getCost();
+    }
 }

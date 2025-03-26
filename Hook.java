@@ -1,21 +1,14 @@
 /**
- * Activity 4.9.3
+ * Activity 4.9.4
  */
 public class Hook extends LakeObject
 {
-  private int strength = 45;
+  private int strength;
 
-  /*---------- accessor ----------*/
-  public int getStrength() 
+  public Hook()
   {
-    return strength; // This return will be updated in the next activity
-    //return strength;
+      super(); // Calls the superclass constructor
+      strength = 55;
+      //System.out.println("Hook: " + getCost() + ":" + getWeight()); Print cost and weight
   }
-
-  @Override
-  public String say()
-  {
-    return "You now have a hook!";
-  }
-
 }
